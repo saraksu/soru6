@@ -4,7 +4,6 @@ fun main()
     print("Ay giriniz=")
     val ay = readLine()?.toLowerCase()
 
-    // Mevsim bilgisini bulma ve ekrana yazdırma
     val mevsim = when (ay) {
         "ocak", "şubat","aralık" -> "Kış"
         "mart", "nisan", "mayıs" -> "İlkbahar"
