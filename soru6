@@ -1,0 +1,21 @@
+fun main() 
+
+{
+    print("Ay giriniz=")
+    val ay = readLine()?.toLowerCase()
+
+    // Mevsim bilgisini bulma ve ekrana yazdırma
+    val mevsim = when (ay) {
+        "ocak", "şubat","aralık" -> "Kış"
+        "mart", "nisan", "mayıs" -> "İlkbahar"
+        "haziran", "temmuz", "ağustos" -> "Yaz"
+        "eylül", "ekim", "kasım" -> "Sonbahar"
+        else -> null
+    }
+
+    if (mevsim != null) {
+        println("$ay mevsimi: $mevsim")
+    } else {
+        println("Tekrar deneyiniz...")
+    }
+}
